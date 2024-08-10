@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Repuestos de Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        #contact-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #contact-btn:hover {
+            background-color: #218838;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .product-list {
+            list-style: none;
+            padding: 0;
+        }
+        .product-list li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-list h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button id="contact-btn">Contactar por Telegram</button>
+        <h1>Venta de Repuestos de Motos</h1>
+    </header>
+
+    <div class="container">
+        <ul class="product-list">
+            <li>
+                <h2>Repuestos para Motos 110cc</h2>
+                <p>Disponemos de repuestos de alta calidad para motos de 110cc.</p>
+            </li>
+            <li>
+                <h2>Repuestos para Motos 125cc</h2>
+                <p>Encuentra los mejores repuestos para tu moto de 125cc.</p>
+            </li>
+            <li>
+                <h2>Repuestos para Motos 150cc</h2>
+                <p>Repuestos duraderos y fiables para motos de 150cc.</p>
+            </li>
+            <li>
+                <h2>Repuestos para Motos 200cc</h2>
+                <p>Calidad garantizada en repuestos para motos de 200cc.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            window.open('https://t.me/federico_sanchez', '_blank');
+        });
+    </script>
+
+</body>
+</html>
